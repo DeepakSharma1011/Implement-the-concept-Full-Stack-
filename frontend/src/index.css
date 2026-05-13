@@ -1,0 +1,116 @@
+* {
+  margin: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Page background */
+.create-post-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6f8;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.create-post-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form box */
+.create-post-section form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+.create-post-section input[type="file"],
+.create-post-section input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+/* Focus effect */
+.create-post-section input:focus {
+  border-color: #4a90e2;
+}
+
+/* Button */
+.create-post-section button {
+  padding: 10px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.create-post-section button:hover {
+  background: #357bd8;
+}
+
+.feed-section {
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.feed-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.post-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+.post-card img {
+  width: 30%;
+  height: auto;
+  display: block;
+}
+
+.post-card p {
+  padding: 15px;
+  font-size: 1rem;
+  color: #444;
+}
